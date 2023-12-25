@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/container"
+    tools:context=".Activities.HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/contentBodyColor"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="60dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_2"/>
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="163dp"-->
+<!--                android:src="@drawable/banner"-->
+<!--                android:layout_margin="11.7dp"-->
+<!--                android:scaleType="centerCrop"/>-->
+            <EditText
+                android:id="@+id/search"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_stroke"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_search_gray"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11.7dp"
+                android:layout_marginLeft="11.7dp"
+                android:layout_marginTop="11.6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/miniTitle"
+                    android:fontFamily="@font/georgia_bold"
+                    android:textSize="16.7sp"
+                    android:text="Recommend"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all"
+                    android:textSize="13.3sp"
+                    android:textColor="@color/sky_blue"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingTop="13.3dp"
+                android:paddingLeft="16.7dp"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/recommanded_recyclerview"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11.7dp"
+                android:layout_marginLeft="11.7dp"
+                android:layout_marginTop="23.3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/miniTitle"
+                    android:fontFamily="@font/georgia_bold"
+                    android:textSize="16.7sp"
+                    android:text="Today’s Top 50 Books"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all"
+                    android:textSize="13.3sp"
+                    android:textColor="@color/sky_blue"/>
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="13.3dp"
+                android:paddingLeft="16.7dp"
+                android:nestedScrollingEnabled="false"
+                android:id="@+id/top50_books_recyclerview"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="52.6dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:layout_marginTop="15dp"
+        android:gravity="bottom|end"
+        android:layout_gravity="bottom"
+        app:bb_activeTabColor="#ffffff"
+        app:bb_badgesHideWhenActive="true"
+        app:bb_inActiveTabColor="#a4ebfe"
+        app:bb_showShadow="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"
+
+         />
+
+
+</RelativeLayout>

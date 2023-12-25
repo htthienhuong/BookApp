@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_tab">#FFFFFFFF</color>
+    <color name="mainbackground">#F3DEBA</color>
+    <color name="toolbar">#A9907E</color>
+    <color name="brown">#A9907E</color>
+    <color name="orange">#FF000000</color>
+    <color name="green">#069661</color>
+    <color name="sky_blue">#83b4d7</color>
+    <color name="txt_color">#394556</color>
+    <color name="contentBodyColor">#FCFCFC</color>
+    <color name="transparent">#00000000</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="imageBorderColor">#E01E7A</color>
+    <color name="miniTitle">#2A2E43</color>
+    <color name="dark_gray">#595958</color>
+    <color name="red">#ff352b</color>
+    <color name="main_blue">#0024ff</color>
+    <color  name="mtrl_textinput_default_box_stroke_color">#A9907E</color>
+    <color name="gray_light">#FFB8B8B8</color>
+
+</resources>

@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#373737" /> <!-- Màu của nút -->
+    <size android:width="60dp" android:height="60dp" /> <!-- Kích thước vuông -->
+</shape>

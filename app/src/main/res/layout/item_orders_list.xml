@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bookcover"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginBottom="16.7dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/purchaseCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp" />
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="57.3dp"
+            android:layout_height="85.3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blink_imges"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11.7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Blink: The Power of Thinking Without
+Thinking"
+                android:fontFamily="@font/georgia_regular_font"
+                android:textSize="15sp"
+                android:textColor="@color/txt_color"/>
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:layout_marginTop="7dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/georgia_bold"
+
+                android:text="100.000"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="12.4dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/book"/>
+
+                <TextView
+                    android:fontFamily="@font/georgia_regular_font"
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="11.7sp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/txt_color"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

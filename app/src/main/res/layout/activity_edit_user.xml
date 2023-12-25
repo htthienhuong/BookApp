@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditUserActivity">
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/rectangle"
+        />
+
+    <View
+        android:id="@+id/arrow_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/arrow_back"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/unsplash_jm"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="124dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="93dp"
+        android:src="@color/gray_light"
+        android:strokeWidth="10"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="5dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="277dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Email"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtemail"
+            android:focusable="false"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="359dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:boxStrokeWidth="2dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtname"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="12dp"
+            android:hint="@string/full_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:buttonTint="#88abb1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="441dp"
+        android:id="@+id/radiogroup"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0024ff"
+
+            android:text="@string/male"
+            android:onClick="checkButton"/>
+        <RadioButton android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:buttonTint="#0024ff"
+            android:onClick="checkButton"/>
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="490dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+        app:boxStrokeWidth="2dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtbirthday"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/cake"
+            android:drawablePadding="12dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/birthday" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/update_button"
+        android:layout_width="283dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="676dp"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/brown"
+
+        android:background="@drawable/corner"/>
+
+
+</RelativeLayout>

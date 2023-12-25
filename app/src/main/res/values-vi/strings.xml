@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">BookApp</string>
+    <string name="connect_with_googlee">Đăng nhập Google</string>
+    <string name="by_clicking_i_agree_to_terms_and_service">By clicking, I agree to Terms and Service.</string>
+    <string name="sign_in">Đăng nhập để tiếp tục</string>
+    <string name="email_address">Địa chỉ Email</string>
+    <string name="forget_password">Quên mật khẩu?</string>
+    <string name="password">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="don_t_have_account_register">Chưa có tài khoản? ĐĂNG KÝ</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="vietnamese" translatable="false">Tiếng Việt</string>
+    <string name="failed_download_translation_model">Failed to download translation tools, please check your WIFI connection</string>
+    <string name="welcome_to_ebooks">Chào mừng tới eBooks</string>
+    <string name="sign_in_card">Đăng Nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="full_name">Họ tên</string>
+    <string name="welcome_regis">Chào mừng đén Ebooks</string>
+    <string name="please_enter_your_birthday">Please enter your birthday</string>
+    <string name="please_enter_your_email">Please enter your email</string>
+    <string name="please_enter_your_password">Please enter your password</string>
+    <string name="registered_successfully">Register Successfully</string>
+    <string name="failed_to_register">Failed to register</string>
+    <string name="reset_password">Cập nhật Mật khẩu</string>
+    <string name="enter_your_birthday_here">Ngày Sinh</string>
+    <string name="email_is_required">Email is required</string>
+    <string name="check_your_email_to_reset_password">Check your email to reset password</string>
+    <string name="signup_to_disc">Đăng ký để khám phá sách mới</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="cant_login">Error to Login</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="edit_profile">Chỉnh sửa thông tin</string>
+    <string name="history">Lịch sử</string>
+    <string name="other">Khác</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="Favourite">Cuốn sách yêu thích</string>
+    <string name="setting">Cài đặt</string>
+    <string name="edit_personal_detail">Các thông tin cá nhân</string>
+    <string name="dark_mode">Chế độ Tối</string>
+    <string name="update">Cập nhật</string>
+    <string name="birthday">Sinh nhật</string>
+    <string name="add">Thêm</string>
+    <string name="my_category">Sản phẩm của tôi</string>
+    <string name="add_to_cart">Thêm vào giỏ hàng</string>
+    <string name="my_cart">Giỏ hàng</string>
+    <string name="my_order">Đơn hàng</string>
+
+</resources>
